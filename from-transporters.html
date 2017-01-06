@@ -29,51 +29,64 @@
       <h4 class="text-center">SEARCH FOR BOOKINGS</h4>
       <div class="row">
         <div class="col-xs-12 col-sm-4">
-          <div class="form-group loc"><span class="fa fa-map-marker"></span>
+          <div class="form-group loc">
             <label>FROM</label>
-            <select class="form-control" id="from" name="from" required placeholder="from">
-              <option value="abuja">Abuja</option>
-              <option value="bayelsa">Bayelsa</option>
-              <option value="benue">Benue</option>
-              <option value="borno">Borno</option>
-              <option value="cross river">Cross River</option>
-              <option value="delta">Delta</option>
-              <option value="lagos">Lagos</option>
-            </select>
+            <div class="input-group">
+              <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+              <select class="form-control" id="from" name="from" required placeholder="from">
+                <option value="abuja">Abuja</option>
+                <option value="bayelsa">Bayelsa</option>
+                <option value="benue">Benue</option>
+                <option value="borno">Borno</option>
+                <option value="cross river">Cross River</option>
+                <option value="delta">Delta</option>
+                <option value="lagos">Lagos</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
-          <div class="form-group loc"><span class="fa fa-map-marker"></span>
+          <div class="form-group loc">
             <label>DESTINATION</label>
-            <select class="form-control" id="destination" name="destination" required placeholder="Destination">
-              <option value="abuja">Abuja</option>
-              <option value="bayelsa">Bayelsa</option>
-              <option value="benue">Benue</option>
-              <option value="borno">Borno</option>
-              <option value="cross river">Cross River</option>
-              <option value="delta">Delta</option>
-              <option value="lagos">Lagos</option>
-            </select>
+            <div class="input-group">
+              <span class="input-group-addon"><span class="fa fa-map-marker"></span></span>
+              <select class="form-control" id="destination" name="destination" required placeholder="Destination">
+                <option value="abuja">Abuja</option>
+                <option value="bayelsa">Bayelsa</option>
+                <option value="benue">Benue</option>
+                <option value="borno">Borno</option>
+                <option value="cross river">Cross River</option>
+                <option value="delta">Delta</option>
+                <option value="lagos">Lagos</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="col-xs-6 col-sm-2">
-          <div class="form-group"><span class="fa fa-calender-plus-o"></span>
+          <div class="form-group">
             <label>DEPART DATE</label>
-            <input type="date" class="form-control" name="departure">
+            <div class="input-group">
+              <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+              <input type="date" class="form-control" name="departure">
+            </div>
           </div>
         </div>
+
         <div class="col-xs-6 col-sm-2">
-          <div class="form-group"><span class="fa fa-calender-plus-o"></span>
+          <div class="form-group">
             <label>ARRIVAL DATE</label>
-            <input type="date" class="form-control disabled" disabled="disabled" name="departure">
+            <div class="input-group">
+              <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+              <input type="date" class="disabled form-control" disabled="disabled" name="departure">
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div>
-          <div class="d-down col-xs-12 col-sm-6" role="presentation"><span class="fa fa-male"></span><span>1 passenger</span> <a class="pull-right toggle-form btn btn-default" data-target="passenger-details" href="#" role="tab">CHANGE</a></div>
-          <div class="d-down col-xs-12 col-sm-6" role="presentation"><span>Transport Mode: </span> <a href="#" class="pull-right toggle-form btn btn-default" data-target="vehicle-details" role="tab">CHANGE</a></div>
-        </div>
+
+      <div class="container-fluid">
+        <div class="d-down col-xs-12 col-sm-4" role="presentation"><i class="fa fa-male"></i><span>1 passenger</span><a class="pull-right toggle-form btn btn-default" data-target="passenger-details" href="#" role="tab">CHANGE</a></div>
+        <div class="d-down col-xs-12 col-sm-4" role="presentation"><span> Transport Mode: </span> <a href="#" class="pull-right toggle-form btn btn-default" data-target="vehicle-details" role="tab">CHANGE</a></div>
+        <div class="d-down col-xs-12 col-sm-4"><button type="submit" style="margin: 0px" class="pull-right submit btn btn-success">Search Now</button></div>
       </div>
       <div class="tabc">
         <div class="ash tabp row" role="tabpanel" id="passenger-details">
@@ -90,7 +103,7 @@
         <div class="ash tabp row" role="tabpanel" id="vehicle-details">
           <div class="col-xs-6 col-sm-3"><span class="fa fa-train"> </span> Train<div class="switch pull-right"><div> </div></div></div>
           <div class="col-xs-6 col-sm-3"><span class="fa fa-bus"> </span> Bus<div id="bus" class="switch pull-right"><div> </div></div></div>
-          <div class="col-xs-6 col-sm-3"><span class="fa fa-plane"> </span> Air<div class="switch pull-right"><div> </div></div></div>
+          <div class="col-xs-6 col-sm-3"><span class="fa fa-plane"> </span>Air<div class="switch pull-right"><div> </div></div></div>
           <div class="col-xs-6 col-sm-3"><span class="fa fa-taxi"> </span> Ride Share<div class="switch pull-right"><div> </div></div></div>
         </div>
       </div>
@@ -140,7 +153,6 @@
             $("[name=no-of-passengers]").val(parseInt($(".d-down").eq(0).children("span").text()))
           }
         </script>
-      <div><button type="submit" class="submit btn btn-success">Search Now</button></div>
       <div id="error"></div>
     </form>
   </div>
