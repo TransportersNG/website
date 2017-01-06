@@ -1,0 +1,147 @@
+html, body {
+  padding: 0px;
+  margin: 0;
+}
+#header {
+  height : 300px;
+  width: 100%;
+  background-image: url(../images/slide9.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+#top-header {
+  margin : 10px 0px 0px 15px;
+  color: white;
+  border-style: solid;
+  width: 150px;
+  border-width: 0px 0px 4px 0px;
+
+}
+#header .wrapper {
+  background: linear-gradient(rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
+  height: 100%;
+  padding: 1px 5px;
+}
+#widget {
+  margin : -60px 10px 30px 10px;
+  padding: 10px 20px 40px 20px;
+  background-color: rgba(255,255,255,1.0);
+  box-shadow: 2px 2px 5px rgba(100,100,100,0.2), -4px -1px 5px rgba(100,100,100,0.2);
+  border-radius: 4px;
+}
+form label {
+  color: rgb(100,100,100);
+  font-weight: 250;
+  font-size: 10px;
+}
+.loc:after {
+  content: "\f183";
+}
+div.d-down {
+  padding : 5px;
+}
+.ash {
+  background-color: #EEEEEE;
+}
+#passenger-details .btn-holder {
+  margin: 20px auto;
+}
+#vehicle-details > div {
+  padding: 15px 5px;
+}
+#vehicle-details div .switch {
+  width: 45px;
+  border-radius: 20px;
+  border: 2px solid #DDDDDD;
+  height: 25px;
+}
+#vehicle-details div .switch div {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: -3px 0px 0px -2px;
+  border-radius: 50%;
+  border : 1px solid #CCCCCC;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 2px #BBBBBB;
+}
+#vehicle-details div .switched {
+  background-color: #55DD55;
+  padding-left: 20px;
+}
+.passenger span {
+  float : right;
+  position: relative;
+  top: -35px;
+  cursor: pointer;
+  font-size: 2.0em;
+}
+.passenger .form-control {
+  width : 90%;
+  width : Calc(100% - 21px);
+}
+button.submit {
+  margin : 15px;
+}
+.story {
+  font-size: 1.3em;
+  margin: 60px 0px 0px 20px;
+  background-color: transparent;
+  color : white;
+  font-weight: 100;
+}
+#main.container-fluid .talk {
+  margin: 30px auto;
+  box-shadow: 5px 5px 12px rgba(130,130,130,0.3), -5px 0px 12px rgba(130,130,130,0.3);
+  height: 200px;
+}
+#main.container-fluid .talk .image {
+  margin: 5px auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 50%;
+}
+#main.container-fluid .talk .image.one {
+  background-image: url('../images/reliability.png');
+}
+#main.container-fluid .talk .image.two {
+  background-image: url('../images/price.png');
+}
+#main.container-fluid .talk .image.three {
+  background-image: url('../images/customer-support.jpg');
+}
+#main.container-fluid .talk .text-center {
+  margin-top: 10px;
+  color: rgba(150,150,150,1.0);
+}
+#footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(60,60,60,1.0);
+}
+#vehicle-details:not(:target) {
+  display : none;
+}
+#passenger-details:not(:target) {
+  display : none;
+}
+#vehicle-details {
+  display : block;
+}
+#passenger-details {
+  display : block;
+}
+@media all and (min-width : 768px) {
+  #widget {
+    margin : -100px 50px 30px 50px;
+    padding: 10px 20px 40px 20px;
+  }
+  #main.container-fluid .talk {
+    margin: 30px 4%;
+    box-shadow: 5px 5px 12px rgba(130,130,130,0.3), -5px 0px 12px rgba(130,130,130,0.3);
+    height: 200px;
+  } 
+}

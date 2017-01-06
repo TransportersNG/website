@@ -1,0 +1,8 @@
+[
+  {"company":"ABC Transport Company","date":"28 Dec 2016","departure_time": "09:00 am","arrival_time":"01:00 pm","from":"Lagos","destination":"Delta","price":4000,"car_pickup":"Yes","bus_details":"Economy, Marcopolo, 18-Seater"},
+  {"company":"God is Good Motors","date":"30 Dec 2016","departure_time": "08:00 am","arrival_time":"07:00 pm","from":"Lagos","destination":"Abuja","price":7000,"car_pickup":"Yes","bus_details":"Economy, Hiace, 18-Seater"},
+  {"company":"God is Good Motors","date":"02 Jan 2017","departure_time": "08:00 am","arrival_time":"03:00 pm","from":"Lagos","destination":"Rivers","price":5000,"car_pickup":"Yes","bus_details":"Economy, Hiace, 18-Seater"},
+  {"company":"Chisco Transport Company","date":"04 Jan 2017","departure_time": "06:00 am","arrival_time":"09:00 pm","from":"Lagos","destination":"Kano","price":10000,"car_pickup":"Yes","bus_details":"Economy, Hiace, 18-Seater"},
+  {"company":"Ekenedilichukwu Transport Company","date":"04 Jan 2017","departure_time": "10:00 am","arrival_time":"01:30 pm","from":"Lagos","destination":"Ondo","price":3000,"car_pickup":"Yes","bus_details":"Economy, Hiace, 18-Seater"},
+  {"company":"Ekenedilichukwu Transport Company","date":"06 Jan 2017","departure_time": "08:00 am","arrival_time":"07:00 pm","from":"Lagos","destination":"Abuja","price":10000,"car_pickup":"Yes","bus_details":"Executive, Hiace, 12-Seater"}
+]
