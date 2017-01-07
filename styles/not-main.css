@@ -10,7 +10,7 @@ html, body {
 #login {
   padding: 20px;
 }
-#login .fa {
+#login * {
   color : #FFFFFF;
 }
 .tp {
@@ -46,9 +46,7 @@ html, body {
   padding : 10px 0px;
 }
 #header .wrapper {
-  /*background: linear-gradient(rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
-  height: 100%;
-  padding: 1px 5px;*/
+  background: linear-gradient(rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
 }
 .story {
   font-size: 1.3em;

@@ -21,7 +21,7 @@
           <img src="images/logo1.png" width="300px" height="auto">
         </div>
         <div class="pull-right" id="login">
-          <button class="btn btn-md"><span class="fa fa-lock"></span> Log In</button>
+          <button class="btn btn-md"><span class="fa fa-lock"></span><span class="hidden-xs"> Log In</span></button>
         </div>
       </div>
       <div id="middle-header">
