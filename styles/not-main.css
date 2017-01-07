@@ -2,33 +2,71 @@ html, body {
   padding: 0px;
   margin: 0;
 }
+* {
+  box-sizing: border-box;
+  color: #555555;
+  font-family: "Open sans", "sans-serif";
+}
+#login {
+  padding: 20px;
+}
+#login .fa {
+  color : #FFFFFF;
+}
+.tp {
+  //display: block;
+/*  background-size: auto 25px;
+  background-position: 5px 10px;*/
+  //background-repeat: no-repeat;
+} 
+
+.tp-loc {
+  width: 40px;
+  height: 30px;
+  background : url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTIyLjEwNCA3LjQ4OGMtMS43NjgtMS44LTQuMTM2LTIuNzkyLTYuNjU2LTIuNzkyLTUuMTEyIDAtOS4yNzIgNC4xNi05LjI3MiA5LjI3MiAwIDguMDk2IDguNDcyIDEzIDguODMyIDEzLjIgMC4xMzYgMC4wODAgMC4yODggMC4xMiAwLjQ0OCAwLjEyczAuMzI4LTAuMDQ4IDAuNDcyLTAuMTM2YzAuMzUyLTAuMjE2IDguNjcyLTUuMzg0IDguOC0xMy4xNzYgMC4wMzItMi40MjQtMC44OTYtNC43MjgtMi42MjQtNi40ODh6TTE1LjQyNCAyNS4zMjhjLTEuNjk2LTEuMTA0LTcuNDU2LTUuMjk2LTcuNDU2LTExLjM0NCAwLTQuMTIgMy4zNTItNy40NzIgNy40NzItNy40NzIgMi4wNDAgMCAzLjk0NCAwLjggNS4zNzYgMi4yNDggMS4zODQgMS40MDggMi4xMjggMy4yNTYgMi4wOTYgNS4yMDgtMC4wOTYgNS44MTYtNS44MDggMTAuMi03LjQ4OCAxMS4zNnoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTE1LjQ0IDEwLjM2OGMtMi4xNTIgMC0zLjkwNCAxLjc1Mi0zLjkwNCAzLjkwNHMxLjc1MiAzLjkwNCAzLjkwNCAzLjkwNCAzLjkwNC0xLjc1MiAzLjkwNC0zLjkwNC0xLjc0NC0zLjkwNC0zLjkwNC0zLjkwNHpNMTUuNDQgMTYuMzc2Yy0xLjE2IDAtMi4xMDQtMC45NDQtMi4xMDQtMi4xMDRzMC45NDQtMi4xMDQgMi4xMDQtMi4xMDRjMS4xNiAwIDIuMTA0IDAuOTQ0IDIuMTA0IDIuMTA0cy0wLjk0NCAyLjEwNC0yLjEwNCAyLjEwNHoiPjwvcGF0aD4KPC9zdmc%2BCg%3D%3D");
+}
+#login button {
+  background-color: transparent;
+  border : 1px solid #FFFFFF;
+  color : #FFFFFF;
+  border-radius: 6px;
+}
 #header {
-  height : 300px;
+  height : 400px;
   width: 100%;
-  background-image: url(../images/slide9.jpg);
+  background-image: url(../images/transportersHeader1.png);
   background-size: cover;
-  background-position: bottom;
+  background-position: right bottom;
   background-repeat: no-repeat;
 }
+.head-text, #middle-header {
+  padding: 0px 10px;
+}
 #top-header {
-  margin : 10px 0px 0px 15px;
-  color: white;
-  border-style: solid;
-  width: 150px;
-  border-width: 0px 0px 4px 0px;
-
+  padding : 10px 0px;
 }
 #header .wrapper {
-  background: linear-gradient(rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
+  /*background: linear-gradient(rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
   height: 100%;
-  padding: 1px 5px;
+  padding: 1px 5px;*/
+}
+.story {
+  font-size: 1.3em;
+  margin: 0px 0px 0px 20px;
+  background-color: transparent;
+  color : white;
+  font-weight: 100;
+}
+.story * {
+  color : #FFFFFF;
+  font-weight: 100;
 }
 #widget {
   margin : -60px 10px 30px 10px;
-  padding: 10px 20px 40px 20px;
+  padding: 10px 0px 0px 0px;
   background-color: rgba(255,255,255,1.0);
-  box-shadow: 2px 2px 5px rgba(100,100,100,0.2), -4px -1px 5px rgba(100,100,100,0.2);
-  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(100,100,100,0.2), -1px -1px 2px rgba(100,100,100,0.2);
+  border-radius: 1px;
 }
 form label {
   color: rgb(100,100,100);
@@ -36,43 +74,94 @@ form label {
   font-size: 10px;
   padding-left: 5px;
 }
+.row {
+  margin : 0;
+}
+.loc .form-control {
+  border-left : none !important;
+  box-shadow: none;
+  -webkit-box-shadow : none;
+}
+.ui-datepicker-calendar, .ui-datepicker {
+  background-color: #FFFFFF;
+}
+.ui-datepicker-header {
+  border : none !important;
+  background: #555555 !important; 
+}
+.ui-datepicker-month, .ui-datepicker-year {
+  color: #FFFFFF;
+}
+.ui-state-default {
+  border : none !important;
+  background: none !important; 
+}
+.ui-state-active, .ui-state-hover {
+  background-color: #EEEEEE !important;
+}
 .input-group-addon {
   background-color: transparent;
+  border-right : none !important;
 }
 div.d-down {
-  padding : 5px;
+  padding : 10px 15px;
+  height: 60px; 
+  border : 1px solid #EFEFEF;
 }
 .d-down span {
   padding-left: 5px;
+  font-weight: bold;
 }
-.ash {
+#search {
+  margin: 0px;
+  width : 150px;
+}
+#search * {
+  color: #FFFFFF;
+}
+#passengers:hover, #transport-mode:hover {
+  background-color: #F5F5F5;
+}
+.tabp {
   background-color: #EEEEEE;
+  padding-left: 20px; 
 }
 #passenger-details .btn-holder {
   margin: 20px auto;
 }
+.add-passenger {
+  background-color: #0099FF;
+  color : #FFFFFF;
+}
+.add-passenger * {
+  color : #FFFFFF;
+}
 #vehicle-details > div {
-  padding: 15px 5px;
+  padding: 10px 0px;
 }
 #vehicle-details div .switch {
   width: 45px;
   border-radius: 20px;
-  border: 2px solid #DDDDDD;
-  height: 25px;
+  border: 2px solid #CCCCCC;
+  height: 28px;
+  margin: 0 15px;
 }
 #vehicle-details div .switch div {
   display: block;
   width: 28px;
   height: 28px;
-  margin: -3px 0px 0px -2px;
+  margin-top : -2px;
   border-radius: 50%;
   border : 1px solid #CCCCCC;
   background-color: #FFFFFF;
   box-shadow: 1px 1px 2px #BBBBBB;
 }
 #vehicle-details div .switched {
-  background-color: #55DD55;
-  padding-left: 20px;
+  background-color: #0099FF;
+  padding-left: 15px;
+}
+.passenger {
+  height: 58px;
 }
 .passenger span {
   float : right;
@@ -88,17 +177,18 @@ div.d-down {
 button.submit {
   margin : 15px;
 }
-.story {
-  font-size: 1.3em;
-  margin: 60px 0px 0px 20px;
-  background-color: transparent;
-  color : white;
-  font-weight: 100;
+.partners > div {
+  height : 80px;
+  line-height: 80px;
+}
+#main {
+  background-color: #F1F1FF;
 }
 #main.container-fluid .talk {
   margin: 30px auto;
-  box-shadow: 5px 5px 12px rgba(130,130,130,0.3), -5px 0px 12px rgba(130,130,130,0.3);
+  box-shadow: 1px 1px 3px rgba(130,130,130,0.3), -1px 0px 3px rgba(130,130,130,0.3);
   height: 200px;
+  background-color: #FFFFFF;
 }
 #main.container-fluid .talk .image {
   margin: 5px auto;
@@ -121,11 +211,6 @@ button.submit {
   margin-top: 10px;
   color: rgba(150,150,150,1.0);
 }
-#footer {
-  width: 100%;
-  height: 200px;
-  background-color: rgba(60,60,60,1.0);
-}
 #vehicle-details:not(:target) {
   display : none;
 }
@@ -138,14 +223,53 @@ button.submit {
 #passenger-details {
   display : block;
 }
+.table-responsive {
+  box-shadow: 1px 1px 2px rgba(111,111,111,0.2), -1px -1px 2px rgba(111,111,111,0.2);
+  background-color: #EFEFFB;
+}
+#footer {
+  box-shadow: inset 0px 1px 1px rgba(111,111,111,0.3);
+  width: 100%;
+  background-color: #F1F1FF;
+}
+#footer .row .col-sm-4 {
+  padding: 0px;
+}
+h4.copyright {
+  padding: 10px 0px;
+}
+#footer > .row {
+  margin: 0px 50px; 
+} 
+#footer i.fa {
+  font-size: 2.0em;
+  }
+.socialmedia i {
+   margin-right: 20px;
+} 
 @media all and (min-width : 768px) {
+  .head-text, #middle-header {
+    padding: 0px 50px;
+  }
   #widget {
     margin : -100px 50px 30px 50px;
-    padding: 10px 20px 40px 20px;
+    padding: 10px 0px 0px 0px;
   }
   #main.container-fluid .talk {
     margin: 30px 4%;
-    box-shadow: 5px 5px 12px rgba(130,130,130,0.3), -5px 0px 12px rgba(130,130,130,0.3);
+    box-shadow: 1px 0px 3px rgba(130,130,130,0.3), -1px 4px 3px rgba(130,130,130,0.3);
     height: 200px;
+  }
+  #vehicle-details > div {
+    padding: 15px 0px;
+  }
+  i.fa {
+    font-size: 2.0em;
+  }
+  #footer i.fa {
+    font-size: 3.0em;
+  }
+  #vehicle-details .fa {
+    font-size: 1.3em;
   } 
 }

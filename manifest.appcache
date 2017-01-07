@@ -1,0 +1,10 @@
+CACHE MANIFEST
+CACHE:
+index.php
+styles/bootstrap.min.css
+styles/main.css
+script/jquery.min.js
+slide13.jpg
+
+NETWORK:
+*

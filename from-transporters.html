@@ -4,10 +4,12 @@
   <title>From Transporters</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/not-main.css">
+  <link href="jquery-ui/jquery-ui.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/not-main.css">
   <script type="text/javascript" src="script/jquery.min.js"></script>
   <script type="text/javascript" src="script/bootstrap.min.js"></script>
+  <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 <body>
 <div id="all">
@@ -26,7 +28,6 @@
   </div>
   <div id="widget"> 
     <form class="form" target="_self" action="results.php" method="get">
-      <h4 class="text-center">SEARCH FOR BOOKINGS</h4>
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <div class="form-group loc">
@@ -62,17 +63,17 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-2">
+        <div class="col-xs-6 col-sm-4 loc">
           <div class="form-group">
-            <label>DEPART DATE</label>
+            <label>DEPARTURE</label>
             <div class="input-group">
               <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-              <input type="date" class="form-control" name="departure">
+              <input type="text" placeholder="dd/mm/yyyy" class="datepicker form-control" name="departure">
             </div>
           </div>
         </div>
 
-        <div class="col-xs-6 col-sm-2">
+        <!-- <div class="col-xs-6 col-sm-2">
           <div class="form-group">
             <label>ARRIVAL DATE</label>
             <div class="input-group">
@@ -80,13 +81,13 @@
               <input type="date" class="disabled form-control" disabled="disabled" name="departure">
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="container-fluid">
-        <div class="d-down col-xs-12 col-sm-4" role="presentation"><i class="fa fa-male"></i><span>1 passenger</span><a class="pull-right toggle-form btn btn-default" data-target="passenger-details" href="#" role="tab">CHANGE</a></div>
-        <div class="d-down col-xs-12 col-sm-4" role="presentation"><span> Transport Mode: </span> <a href="#" class="pull-right toggle-form btn btn-default" data-target="vehicle-details" role="tab">CHANGE</a></div>
-        <div class="d-down col-xs-12 col-sm-4"><button type="submit" style="margin: 0px" class="pull-right submit btn btn-success">Search Now</button></div>
+      <div class="row">
+        <div class="d-down col-xs-12 col-sm-4" role="presentation"><i class="fa fa-male"></i><span>1 passenger</span><a class="pull-right toggle-form btn btn-sm btn-default" data-target="passenger-details" href="#" role="tab">CHANGE</a></div>
+        <div class="d-down col-xs-12 col-sm-4" role="presentation"><span>Bus </span> <a href="#" class="pull-right toggle-form btn btn-sm btn-default" data-target="vehicle-details" role="tab">CHANGE</a></div>
+        <div class="d-down col-xs-12 col-sm-4"><button type="submit" style="margin: 0px" class="pull-right submit btn btn-sm btn-danger">Search Now</button></div>
       </div>
       <div class="tabc">
         <div class="ash tabp row" role="tabpanel" id="passenger-details">
@@ -98,13 +99,25 @@
               <option value="adult">Adult</option>
             </select>
           </div>
-          <div class="btn-holder col-xs-6 col-sm-3"><button class="btn btn-success add-passenger">Add passengers</button></div>
+          <div class="btn-holder col-xs-6 col-sm-3"><button class="btn btn-sm btn-success add-passenger">Add passengers</button></div>
         </div>
         <div class="ash tabp row" role="tabpanel" id="vehicle-details">
-          <div class="col-xs-6 col-sm-3"><span class="fa fa-train"> </span> Train<div class="switch pull-right"><div> </div></div></div>
-          <div class="col-xs-6 col-sm-3"><span class="fa fa-bus"> </span> Bus<div id="bus" class="switch pull-right"><div> </div></div></div>
-          <div class="col-xs-6 col-sm-3"><span class="fa fa-plane"> </span>Air<div class="switch pull-right"><div> </div></div></div>
-          <div class="col-xs-6 col-sm-3"><span class="fa fa-taxi"> </span> Ride Share<div class="switch pull-right"><div> </div></div></div>
+          <div class="col-xs-6 col-sm-3">
+            <span class="pull-left fa fa-train"> </span> Train
+            <div class="switch pull-left"><div> </div></div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <span class="pull-left fa fa-bus"> </span> Bus
+            <div id="bus" class="switch switched pull-left"><div> </div></div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <span class="pull-left fa fa-plane"> </span>Air
+            <div class="switch pull-left"><div> </div></div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <span class="pull-left fa fa-taxi"> </span> Ride Share
+            <div class="switch pull-left"><div> </div></div>
+          </div>
         </div>
       </div>
       <input type="text" class="hidden" name="no-of-passengers">
@@ -140,13 +153,13 @@
           }
 
           //Toggle that annoying switch
-          $(".switch").click(function(e) {
+          /*$(".switch").click(function(e) {
             var modesOfTransport = $(".d-down").eq(1).children("span").text()
             var text = $(this).parent().text()
             $(this).toggleClass("switched")
             $(this).hasClass("switched") ?
              $(".d-down").eq(1).children("span").text(modesOfTransport + " " + text) : $(".d-down").eq(1).children("span").text(modesOfTransport.replace(text, ""));
-          })
+          }) */
 
           //Getting the no of passengers to submit
           function computeNoOfPassengers() {
@@ -173,17 +186,14 @@
   <hr>
   <div class="container-fluid table-responsive">
     <div class="h3">Featured Schedules</div>
-    <table id="featured" class="table table-bordered table-striped">
+    <table id="featured" class="table table-striped">
       <thead>
       <tr>
         <th>Company</th>
-        <th>Date</th>
-        <th>Departure time</th>
-        <th>Arrival time</th>
+        <th>Departure</th>
         <th>From</th>
         <th>Destination</th>
         <th>Price (&#x20a6;)</th>
-        <th>Car pickup</th>
         <th>Bus Details</th>
         <th></th>
       </tr>
@@ -199,7 +209,7 @@
           <td>6000</td>
           <td>Yes</td>
           <td>Economy, Marcopolo, 48-Seater</td>
-          <td><a class="btn btn-danger">Book Now</a></td>
+          <td><a class="btn btn-sm btn-danger">Book Now</a></td>
         </tr>
         <tr>
           <td>20 Dec 2016</td>
@@ -210,7 +220,7 @@
           <td>4000</td>
           <td>Yes</td>
           <td>Economy, Hiace, 18-Seater</td>
-          <td><a class="btn btn-danger">Book Now</a></td>
+          <td><a class="btn btn-sm btn-danger">Book Now</a></td>
         </tr>
         <tr>
           <td>21 Dec 2016</td>
@@ -221,7 +231,7 @@
           <td>3000</td>
           <td>Yes</td>
           <td>Economy, Hiace, 18-Seater</td>
-          <td><a class="btn btn-danger">Book Now</a></td>
+          <td><a class="btn btn-sm btn-danger">Book Now</a></td>
         </tr>
         <tr>
           <td rowspan="2">God is Good Motors</td>
@@ -233,7 +243,7 @@
           <td>5000</td>
           <td>Yes</td>
           <td>Economy, Hiace, 18-Seater</td>
-          <td><a class="btn btn-danger">Book Now</a></td>
+          <td><a class="btn btn-sm btn-danger">Book Now</a></td>
         </tr>
         <tr>
           <td>23 Dec 2016</td>
@@ -244,7 +254,7 @@
           <td>4000</td>
           <td>No</td>
           <td>Executive, Hiace, 12-Seater</td>
-          <td><a class="btn btn-danger">Book Now</a></td>
+          <td><a class="btn btn-sm btn-danger">Book Now</a></td>
         </tr> -->
       </tbody>
     </table>
@@ -253,7 +263,6 @@
     
   </div>
 </div>
-<script type="text/javascript" src="script/jquery.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     table = $("#featured");
@@ -269,9 +278,9 @@
     $.getJSON("script/featured.json", function(featured){
       feature = [];
       for(let list in featured) {
-        tbody.append("<tr><td>"+ featured[list].company +"</td><td>" + featured[list].date +"</td><td>" + 
-          featured[list].departure_time +"</td><td>" + featured[list].arrival_time +"</td><td>" + featured[list].from +"</td><td>" + featured[list].destination+ "</td><td>" + featured[list].price +
-        "</td><td>" + featured[list].car_pickup + "</td><td>" + featured[list].bus_details + "</td><td><a class='btn btn-danger'>Book Now</a></td></tr>")
+        tbody.append("<tr><td>"+ featured[list].company + "</td><td>" + featured[list].departure_time +"</td><td>" +
+         featured[list].from +"</td><td>" + featured[list].destination+ "</td><td>" + featured[list].price +
+        "</td><td>" + featured[list].bus_details + "</td><td><a class='btn btn-sm btn-danger'>Book Now</a></td></tr>")
       }
     })
   })
@@ -283,6 +292,10 @@
     $(this).parent().toggleClass("ash")
     $(this).parent().siblings("*").removeClass("ash")
   })
+  $(".datepicker").datepicker({
+    dateFormat : "dd/mm/yy",
+    minDate : 0
+  });
     /*$("select").on({
       "change": function() {
         $_value = this.value;
