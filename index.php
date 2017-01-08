@@ -18,7 +18,8 @@
     <div class="row wrapper">
       <div class="row head-text">
         <div class="pull-left" id="top-header">
-          <img src="images/logo1.png" width="300px" height="auto">
+          <img src="images/logo1.png" class="visible-xs" width="170px" height="auto">
+          <img src="images/logo1.png" class="visible-sm visible-lg" width="300px" height="auto">
         </div>
         <div class="pull-right" id="login">
           <button class="btn btn-md"><span class="fa fa-lock"></span><span class="hidden-xs"> Log In</span></button>
